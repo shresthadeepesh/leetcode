@@ -16,10 +16,10 @@ public class Anagram {
 
         for(char b: t.toCharArray()) {
             if(list.contains(b)) {
-                list.remove(list.get(b));
+                list.remove(list.indexOf(b));
+            } else {
+                return false;
             }
-
-            return false;
         }
 
         return list.isEmpty();
@@ -27,6 +27,8 @@ public class Anagram {
 
     public static void main(String[] args) {
         System.out.println(isAnagram("anagram", "nagaram"));
+        System.out.println(isAnagram("rat", "car"));
+        System.out.println(isAnagram("a", "ab"));
     }
 
 }
