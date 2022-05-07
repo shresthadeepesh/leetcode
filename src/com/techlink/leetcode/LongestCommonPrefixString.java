@@ -2,6 +2,7 @@ package com.techlink.leetcode;
 
 public class LongestCommonPrefixString {
 
+    // TODO:
     public String longestCommonPrefix(String[] strs) {
         return "asda";
     }
